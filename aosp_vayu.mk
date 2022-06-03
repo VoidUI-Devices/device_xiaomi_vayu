@@ -17,6 +17,13 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# VoidUI Properties
+IS_PHONE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+VOID_MAINTAINER := "Chandler Bing"
+
 # Feature Flags
 TARGET_SUPPORTS_QUICK_TAP := true
 
